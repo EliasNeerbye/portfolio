@@ -1,0 +1,47 @@
+html, body{
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 90%;
+    margin: auto;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    display: block;
+    width: 17.5%;
+    text-align: center;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #101010;
+    color: #00FFFF;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: #101030;
+    color: #A3FFFF;
+}

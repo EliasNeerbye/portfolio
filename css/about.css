@@ -1,0 +1,17 @@
+main{
+    margin-top: 30px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+#imgDiv{
+    width: 50%;
+    height: 100%;
+}
+
+#imgDiv img{
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+}
