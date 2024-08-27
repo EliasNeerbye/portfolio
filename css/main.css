@@ -45,3 +45,31 @@ a:hover{
     background-color: #101030;
     color: #A3FFFF;
 }
+
+#gitLogoDiv{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 1000px;
+}
+
+#gitLogoDiv:hover{
+    transform: scale(1.5);
+    box-shadow: 2px 2px 100px 1px aqua;
+}
+
+#gitLogo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer p, #gitLogoDiv{
+    display: inline-block;
+}
