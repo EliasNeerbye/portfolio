@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="styles/404.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <main>
+        <h1>Oops!</h1>
+        <div id="not-found-container">
+            <p id="not-found-tagline">The requested URL <%= url %> was not found on this server.</p>
+            <a href="/">Go home</a>
+        </div>
+    </main>
+</body>
+</html>

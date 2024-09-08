@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <%- include("partials/navbar") %>
+    <script>activateNav("contact")</script>
+    <main>
+        <h1>Kontakt Meg</h1>
+        <section id="contactInfo">
+            <div id="coolImg"><img src="assets/Elias.png"></div>
+            <div id="actualInfo">
+                <ul>
+                    <li><b><u>Navn</u>:</b> Elias Neerbye</li>
+                    <li><b><u>Fødselsdato</u>:</b> 30.06.2005</li>
+                    <li><b><u>Tlf</u>:</b> <a href="tlf:+4792964059">92964059</a></li>
+                    <li><b><u>Email</u>:</b> <a href="mailto:quidque@quidque.no">quidque@quidque.no</a></li>
+                    <li><b><u>Nettside</u>:</b> <a href="https://quidque.no">quidque.no</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <%- include("partials/footer") %>
+</body>
+</html>

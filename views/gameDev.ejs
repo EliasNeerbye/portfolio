@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/gameDev.css">
+</head>
+<body>
+    <%- include("partials/navbar") %>
+    <main>
+        <h2>Spillutvikling</h2>
+        <p>Det viser seg at Godot spillet mitt har forsvunnet med tiden, men jeg fant et hangman spill jeg lagde ved hjelp av pygame, hvis du har lyst til å sjekke det ut.</p>
+        <button onclick="downloadHangman()">Test ut Hangman.py</button>
+        <div><img src="/assets/hangmanpreview.png"></div>
+    </main>
+    <script>
+        function downloadHangman() {
+            window.open("/HangmanPygame.zip");
+        }
+    </script>
+    <%- include("partials/footer") %>
+</body>
+</html>

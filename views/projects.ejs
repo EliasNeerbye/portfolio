@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+    <%- include("partials/navbar") %>
+    <script>activateNav("projects")</script>
+    <main>
+        <article class="project" id="workWithApi">
+            <h2>Bruk av API</h2>
+            <p>I dette prosjektet brukte jeg 3 forskjellige API'er for å lage noen spennende tjenester.</p>
+        </article>
+        <article class="project" id="quidqueStudios">
+            <h2>Quidque Studios</h2>
+            <p>Dette er et pågående "prosjekt". Eller kanskje mer et merke. Jeg har lyst til å bygge mange ting, og legge dem under dette.<br><br><i>Denne vil ta deg til en annen nettside</i></p>
+        </article>
+        <article class="project" id="passwordManager">
+            <h2>Passord Behandler</h2>
+            <p>Jeg ønsket å sjekke ut hvordan det var å jobbe med C#, og lagde dette programmet som lar deg lagre passord.<br><br><i>Denne vil ta deg til en annen nettside</i></p>
+        </article>
+        <article class="project" id="gameDev">
+            <h2>Spillutvikling</h2>
+            <p>Spillutvikling har alltid vært noe jeg ville prøve, siden jeg elsker å spille videospill. I dette prosjektet lærte jeg meg mye om hvordan man lager spill, ved hjelp av Godot.</p>
+        </article>
+        <article class="project" id="projectSynedrius">
+            <h2>Project Synedrius</h2>
+            <p>Dette er mitt pågående projsjekt. Jeg har tenkt til å lage en nettside som skal blande tre populære ting: Wikis, Forums og Live Chats.<br><br><i>Denne vil ta deg til en annen nettside</i></p>
+        </article>
+        <article class="project" id="sortingAlgorithms">
+            <h2>Sorterings Algoritmer</h2>
+            <p>Her lagde jeg en liten side som bare repeterer forskjellige sorteringsalgoritmer. <br><br><i>Css ikke laget for mobil.</i></p>
+        </article>
+        <!-- Add more projects here -->
+    </main>
+    <script src="js/projects.js"></script>
+    <%- include("partials/footer") %>
+</body>
+</html>

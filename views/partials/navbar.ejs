@@ -1,6 +1,27 @@
-<link rel="stylesheet" href="styles/navbar.css">
+<link rel="stylesheet" href="/styles/navbar.css">
 <div id="navbar">
-    <a href="/">Hjem</a>
-    <a href="/projects">Prosjekter</a>
-    <a href="/contact">Kontakt</a>
+    <a href="/" id="navHome">Hjem</a>
+    <a href="/projects" id="navProj">Prosjekter</a>
+    <a href="/contact" id="navCont">Kontakt</a>
 </div>
+<script>
+    function activateNav(where) {
+        switch (where) {
+            case "home":
+                document.getElementById("navHome").style.textDecoration = "underline";
+                console.log("Actiavted home");
+                break;
+            case "contact":
+                document.getElementById("navCont").style.textDecoration = "underline";
+                console.log("Actiavted contact");
+                break;
+            case "projects":
+                document.getElementById("navProj").style.textDecoration = "underline";
+                console.log("Actiavted projects");
+                break;
+        
+            default:
+                break;
+        }
+    }
+</script>

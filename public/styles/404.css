@@ -1,0 +1,37 @@
+/* Existing styles from the home page */
+main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Styling specific to the 404 page */
+#not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#not-found-tagline {
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 728px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    #tagline, #not-found-tagline {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,11 @@
+#footerP{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footerP a{
+    display: inline;
+    font-size: 1rem;
+}

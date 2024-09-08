@@ -1,0 +1,100 @@
+main {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.project{
+    width: 80%;
+    aspect-ratio: 16/9;
+    background-color: #00255022;
+    border: 1px solid #EFEFEF33;
+    border-radius: 16px;
+    padding: 5%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project h2{
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.project p{
+    font-size: 1rem;
+    font-style: italic;
+    max-height: 75%;
+    overflow-y: hidden;
+}
+
+
+@media (min-width: 600px) {
+    html{
+        font-size: 18px !important;
+    }
+
+    main{
+        width: 95%;
+        gap: 5px 5px;
+        overflow: hidden;
+
+    }
+    
+    .project{
+        width: 40%;
+        transition-duration: 0.5s;
+        transform: rotate(-1.5deg);
+        padding: 2%;
+        height: 200px;
+    }
+
+    .project:hover{
+        transform: scale(1.05) rotate(5deg);
+        z-index: 1;
+        background-color: #002550;
+    }
+}
+
+
+@media (min-width: 900px) {
+    html{
+        font-size: 20px !important;
+    }
+    main{
+        justify-content: space-around;
+    }
+    
+    .project{
+        width: 22.5%;
+        transition-duration: 0.5s;
+        transform: rotate(-5deg);
+        padding: 2%;
+        aspect-ratio: 20/9;
+    }
+
+    .project:hover{
+        transform: scale(1.05) rotate(5deg);
+        z-index: 1;
+        background-color: #002550;
+    }
+    .project p{
+        overflow-y: auto;
+    }
+
+    .project p::-webkit-scrollbar{
+        width: 3px;
+        background-color: white;
+        border-radius: 50px;
+    }
+    .project p::-webkit-scrollbar-thumb{
+        background-color: #013d81;
+        border-radius: 50px;
+    }
+}

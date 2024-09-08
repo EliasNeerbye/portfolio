@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualization</title>
+    <link rel="stylesheet" href="sortingVis.css">
+</head>
+<body>
+    <div id="navbar">
+        <link rel="stylesheet" href="/styles/navbar.css">
+        <a href="/" id="navHome">Hjem</a>
+        <a href="/projects" id="navProj">Prosjekter</a>
+        <a href="/contact" id="navCont">Kontakt</a>
+    </div>
+    <main>
+        <section class="algorithm" id="bubble">
+            <h2>Bubble Sort</h2>
+            <canvas id="bubbleCanvas"></canvas>
+            <p>Dette er en boblesorteringsalgoritme.</p>
+        </section>
+        <section class="algorithm" id="quick">
+            <h2>Quick Sort</h2>
+            <canvas id="quickCanvas"></canvas>
+            <p>Dette er en hurtigsorteringsalgoritme.</p>
+        </section>
+        <section class="algorithm" id="merge">
+            <h2>Merge Sort</h2>
+            <canvas id="mergeCanvas"></canvas>
+            <p>Dette er en flettesorteringsalgoritme.</p>
+        </section>
+    </main>
+    <link rel="stylesheet" href="/styles/footer.css">
+    <p id="footerP">&copy; <a href="https://quidque.no/">Quidque Studios</a> 2024</p>
+    <script src="sortingVis.js"></script>
+</body>
+</html>

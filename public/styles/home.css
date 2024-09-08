@@ -1,0 +1,119 @@
+main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#tagline{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    padding: 5px;
+}
+
+#desc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#desc div{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#desc div img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+}
+
+#desc p{
+    display: block;
+    width: 100%;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectDiv{
+    width: 90%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #00255022;
+    border: 1px solid #EFEFEF33;
+    border-radius: 16px;
+    padding: 2.5% 5% 2.5% 5%;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: rotate(-0.5deg);
+}
+
+.projectDiv:hover{
+    transform: scale(1.15) rotate(5deg);
+    z-index: 1;
+    background-color: #002550;
+}
+
+@media (min-width: 728px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    #tagline {
+        font-size: 1.1rem;
+    }
+
+    #desc{
+        gap: 20px;
+    }
+
+    #desc div {
+        width: 30%;
+        height: 300px;
+    }
+
+    #desc p{
+        width: 30%;
+        height: 100%;
+    }
+
+    #projects{
+        width: 90%;
+    }
+
+    #projects a{
+        display: block;
+        width: 95%;
+        text-align: start;
+    }
+
+    .projectDiv {
+        width: 100%;
+        height: 60px;
+    }
+}
