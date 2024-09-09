@@ -52,6 +52,12 @@ li a{
     display: inline;
 }
 
+#otherLinks{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
 @media (min-width: 728px){
     main{
         width: 80%;
